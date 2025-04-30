@@ -27,7 +27,7 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/domain-routing-openwr
 
 ## Автоматическая
 ```
-sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/main/install.sh)
+sh <(wget -O - https://raw.githubusercontent.com/GiaNTizmO/podkop/refs/heads/main/install.sh)
 ```
 
 Скрипт также предложит выбрать, какой туннель будет использоваться. Для выбранного туннеля будут установлены нужные пакеты, а для Wireguard и AmneziaWG также будет предложена автоматическая настройка - прямо в консоли скрипт запросит данные конфига. Для AmneziaWG можно также выбрать вариант с использованием конфига обычного Wireguard и автоматической обфускацией до AmneziaWG.
@@ -41,7 +41,7 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/mai
 # Обновление
 Та же самая команда, что для установки. Но с флагом **upgrade** сразу передёт к обновлению.
 ```
-sh <(wget -qO- https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/main/install.sh) --upgrade
+sh <(wget -qO- https://raw.githubusercontent.com/GiaNTizmO/podkop/refs/heads/main/install.sh) --upgrade
 ```
 
 # Удаление
