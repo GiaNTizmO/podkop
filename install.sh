@@ -426,13 +426,6 @@ check_system() {
     AVAILABLE_SPACE=$(df /overlay | awk 'NR==2 {print $4}')
     REQUIRED_SPACE=15360 # 15MB in KB
 
-    if [ "$AVAILABLE_SPACE" -lt "$REQUIRED_SPACE" ]; then
-        printf "\033[31;1mError: Insufficient space in flash\033[0m\n"
-        echo "Available: $((AVAILABLE_SPACE/1024))MB"
-        echo "Required: $((REQUIRED_SPACE/1024))MB"
-        exit 1
-    fi
-
     if ! nslookup google.com >/dev/null 2>&1; then
         printf "\033[31;1mDNS not working\033[0m\n"
         exit 1
